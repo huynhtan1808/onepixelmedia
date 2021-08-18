@@ -7,7 +7,7 @@ const Footer = ({ footer }) => {
   return (
     <footer className="pt-12 bg-gray-100">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
-        <div>{footer.logo && <NextImage width="120" height="33" media={footer.logo} />}</div>
+        <div>{footer.logo && <NextImage width="120" height="55" media={footer.logo} />}</div>
         <nav className="flex flex-wrap flex-row lg:gap-20 items-start lg:justify-end mb-10">
           {footer.columns.map((footerColumn) => (
             <div key={footerColumn.id} className="mt-10 lg:mt-0 w-6/12 lg:w-auto">
