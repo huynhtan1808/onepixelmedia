@@ -15,15 +15,12 @@ const MyApp = ({ Component, pageProps }) => {
   }
 
   const { metadata } = global
-  const site = "https://onepixelmedia.com";
-  const canonicalURL = site + useRouter().asPath;
 
   return (
     <>
       {/* Favicon */}
       <Head>
         <link rel="shortcut icon" href={getStrapiMedia(global.favicon.url)} />
-        <link rel="canonical" href={canonicalURL} />
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
