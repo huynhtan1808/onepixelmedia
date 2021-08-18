@@ -8,19 +8,22 @@ import { getGlobalData } from "utils/api"
 import "@/styles/index.css"
 
 const MyApp = ({ Component, pageProps }) => {
+  const site = "https://onepixelmedia.com";
+  const canonicalURL = site + useRouter().asPath;
   // Extract the data we need
   const { global } = pageProps
   if (global == null) {
     return <ErrorPage statusCode={404} />
   }
 
-  const { metadata } = global
+  const { metadata } = global;
 
   return (
     <>
       {/* Favicon */}
       <Head>
         <link rel="shortcut icon" href={getStrapiMedia(global.favicon.url)} />
+        <link rel="canonical" href={canonicalURL} />
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
