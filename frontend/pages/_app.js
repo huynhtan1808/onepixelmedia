@@ -8,15 +8,15 @@ import { getGlobalData } from "utils/api"
 import "@/styles/index.css"
 
 const MyApp = ({ Component, pageProps }) => {
-  const site = "https://onepixelmedia.com";
-  const canonicalURL = site + useRouter().asPath;
+  const site = "https://onepixelmedia.com"
+  const canonicalURL = site + useRouter().asPath
   // Extract the data we need
   const { global } = pageProps
   if (global == null) {
     return <ErrorPage statusCode={404} />
   }
 
-  const { metadata } = global;
+  const { metadata } = global
 
   return (
     <>
