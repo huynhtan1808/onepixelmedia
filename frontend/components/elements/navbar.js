@@ -64,7 +64,6 @@ const Navbar = ({ navbar, pageContext }) => {
                 <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} compact />
               </div>
             )}
-            
           </div>
         </div>
       </nav>
