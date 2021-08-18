@@ -52,18 +52,19 @@ const Navbar = ({ navbar, pageContext }) => {
             <button onClick={() => setMobileMenuIsShown(true)} className="p-1 block md:hidden">
               <MdMenu className="h-8 w-auto" />
             </button>
-            {/* CTA button on desktop */}
-            {navbar.button && (
-              <div className="hidden md:block">
-                <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} compact />
-              </div>
-            )}
             {/* Locale Switch Desktop */}
             {pageContext.localizedPaths && (
               <div className="hidden md:block text-grey hover:text-primary">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
             )}
+            {/* CTA button on desktop */}
+            {navbar.button && (
+              <div className="hidden md:block">
+                <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} compact />
+              </div>
+            )}
+            
           </div>
         </div>
       </nav>
