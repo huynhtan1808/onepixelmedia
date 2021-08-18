@@ -5,12 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        <link
-            rel="preload"
-            href="public/fonts/"
-            as="font"
-            crossOrigin=""
-          />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-icon-180x180.png"/>
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <meta name="msapplication-TileColor" content="#ffffff"/>
