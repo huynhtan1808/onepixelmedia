@@ -27,10 +27,10 @@ const FeatureRowsGroup = ({ data }) => {
             </CustomLink>
           </div>
           {/* Media section */}
-          <div className="w-full sm:9/12 lg:w-4/12 max-h-full">
+          <div className="w-full sm:9/12 lg:w-5/12 max-h-full">
             {/* Images */}
             {feature.media.mime.startsWith("image") && (
-              <div className="w-full h-auto">
+              <div className="w-full h-auto shadow-xl">
                 <NextImage media={feature.media} />
               </div>
             )}
