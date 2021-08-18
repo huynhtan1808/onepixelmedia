@@ -23,9 +23,7 @@ const FeatureRowsGroup = ({ data }) => {
             <h3 className="title">{feature.title}</h3>
             <p className="my-6">{feature.description}</p>
             <CustomLink link={feature.link}>
-              <div className="text-blue-600 with-arrow hover:underline">
-                {feature.link.text}
-              </div>
+              <div className="text-blue-600 with-arrow hover:underline">{feature.link.text}</div>
             </CustomLink>
           </div>
           {/* Media section */}
@@ -37,14 +35,7 @@ const FeatureRowsGroup = ({ data }) => {
               </div>
             )}
             {/* Videos */}
-            {feature.media.mime.startsWith("video") && (
-              <Video
-                media={feature.media}
-                className="w-full h-auto"
-                autoPlay
-                controls={false}
-              />
-            )}
+            {feature.media.mime.startsWith("video") && <Video media={feature.media} className="w-full h-auto" autoPlay controls={false} />}
           </div>
         </div>
       ))}

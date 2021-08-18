@@ -11,11 +11,7 @@ const preview = async (req, res) => {
   const cookies = parseCookies(req)
   const slugArray = req.query.slug.split("/")
   // Fetch the headless CMS to check if the provided `slug` exists
-  const pageData = await getPageData(
-    { slug: slugArray },
-    cookies.NEXT_LOCALE,
-    true
-  )
+  const pageData = await getPageData({ slug: slugArray }, cookies.NEXT_LOCALE, true)
 
   // If the slug doesn't exist prevent preview mode from being enabled
   if (!pageData) {

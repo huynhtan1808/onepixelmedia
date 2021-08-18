@@ -33,19 +33,11 @@ const LocaleSwitch = ({ pageContext }) => {
     }
 
     const checkLocaleMismatch = async () => {
-      if (
-        !isMounted.current &&
-        localeCookie &&
-        localeCookie !== pageContext.locale
-      ) {
+      if (!isMounted.current && localeCookie && localeCookie !== pageContext.locale) {
         // Redirect to locale page if locale mismatch
         const localePage = getLocalizedPage(localeCookie, pageContext)
 
-        router.push(
-          `${localizePath({ ...pageContext, ...localePage })}`,
-          `${localizePath({ ...pageContext, ...localePage })}`,
-          { locale: localePage.locale }
-        )
+        router.push(`${localizePath({ ...pageContext, ...localePage })}`, `${localizePath({ ...pageContext, ...localePage })}`, { locale: localePage.locale })
       }
       setShowing(false)
     }
@@ -69,25 +61,12 @@ const LocaleSwitch = ({ pageContext }) => {
         <span className="capitalize">{locale}</span>
         <MdExpandMore className="ml-1 text-primary-600" />
       </button>
-      <div
-        className={`w-full bg-white p-1 mt-1 shadow-lg rounded-md ${
-          showing ? "absolute" : "hidden"
-        }`}
-      >
+      <div className={`w-full bg-white p-1 mt-1 shadow-lg rounded-md ${showing ? "absolute" : "hidden"}`}>
         {pageContext.localizedPaths &&
           pageContext.localizedPaths.map(({ href, locale }) => {
             return (
-              <Link
-                href={href}
-                key={locale}
-                locale={locale}
-                role="option"
-                passHref
-              >
-                <p
-                  onClick={() => handleLocaleChange(locale)}
-                  className="capitalize hover:bg-primary-50 hover:text-primary-600  cursor-pointer p-2 rounded-md text-center hover:text-primary-600"
-                >
+              <Link href={href} key={locale} locale={locale} role="option" passHref>
+                <p onClick={() => handleLocaleChange(locale)} className="capitalize hover:bg-primary-50 hover:text-primary-600  cursor-pointer p-2 rounded-md text-center hover:text-primary-600">
                   {locale}
                 </p>
               </Link>

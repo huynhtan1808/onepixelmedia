@@ -37,18 +37,13 @@ const Section = ({ sectionData }) => {
 
 const PreviewModeBanner = () => {
   const router = useRouter()
-  const exitURL = `/api/exit-preview?redirect=${encodeURIComponent(
-    router.asPath
-  )}`
+  const exitURL = `/api/exit-preview?redirect=${encodeURIComponent(router.asPath)}`
 
   return (
     <div className="py-4 bg-red-600 text-red-100 font-semibold uppercase tracking-wide">
       <div className="container">
         Preview mode is on.{" "}
-        <a
-          className="underline"
-          href={`/api/exit-preview?redirect=${router.asPath}`}
-        >
+        <a className="underline" href={`/api/exit-preview?redirect=${router.asPath}`}>
           Turn off
         </a>
       </div>
@@ -64,10 +59,7 @@ const Sections = ({ sections, preview }) => {
       {preview && <PreviewModeBanner />}
       {/* Show the actual sections */}
       {sections.map((section) => (
-        <Section
-          sectionData={section}
-          key={`${section.__component}${section.id}`}
-        />
+        <Section sectionData={section} key={`${section.__component}${section.id}`} />
       ))}
     </div>
   )

@@ -17,11 +17,7 @@ const Hero = ({ data }) => {
         {/* Buttons row */}
         <div className="flex flex-row flex-wrap gap-4 justify-center">
           {data.buttons.map((button) => (
-            <ButtonLink
-              button={button}
-              appearance={getButtonAppearance(button.type, "light")}
-              key={button.id}
-            />
+            <ButtonLink button={button} appearance={getButtonAppearance(button.type, "light")} key={button.id} />
           ))}
         </div>
         {/* Small rich text */}

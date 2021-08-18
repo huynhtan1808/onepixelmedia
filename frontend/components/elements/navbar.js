@@ -35,9 +35,7 @@ const Navbar = ({ navbar, pageContext }) => {
               {navbar.links.map((navLink) => (
                 <li key={navLink.id}>
                   <CustomLink link={navLink} locale={router.locale}>
-                    <div className="text-grey hover:text-primary px-2 py-1">
-                      {navLink.text}
-                    </div>
+                    <div className="text-grey hover:text-primary px-2 py-1">{navLink.text}</div>
                   </CustomLink>
                 </li>
               ))}
@@ -51,20 +49,13 @@ const Navbar = ({ navbar, pageContext }) => {
               </div>
             )}
             {/* Hamburger menu on mobile */}
-            <button
-              onClick={() => setMobileMenuIsShown(true)}
-              className="p-1 block md:hidden"
-            >
+            <button onClick={() => setMobileMenuIsShown(true)} className="p-1 block md:hidden">
               <MdMenu className="h-8 w-auto" />
             </button>
             {/* CTA button on desktop */}
             {navbar.button && (
               <div className="hidden md:block">
-                <ButtonLink
-                  button={navbar.button}
-                  appearance={getButtonAppearance(navbar.button.type, "light")}
-                  compact
-                />
+                <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} compact />
               </div>
             )}
             {/* Locale Switch Desktop */}
@@ -78,12 +69,7 @@ const Navbar = ({ navbar, pageContext }) => {
       </nav>
 
       {/* Mobile navigation menu panel */}
-      {mobileMenuIsShown && (
-        <MobileNavMenu
-          navbar={navbar}
-          closeSelf={() => setMobileMenuIsShown(false)}
-        />
-      )}
+      {mobileMenuIsShown && <MobileNavMenu navbar={navbar} closeSelf={() => setMobileMenuIsShown(false)} />}
     </>
   )
 }

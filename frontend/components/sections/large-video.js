@@ -7,11 +7,7 @@ const LargeVideo = ({ data }) => {
       <p className="text-lg mb-10">{data.description}</p>
       {/* Video wrapper */}
       <div className="w-full lg:w-9/12 mx-auto overflow-hidden shadow-2xl">
-        <Video
-          media={data.video}
-          poster={data.poster}
-          className="w-full max-h-full"
-        />
+        <Video media={data.video} poster={data.poster} className="w-full max-h-full" />
       </div>
     </section>
   )

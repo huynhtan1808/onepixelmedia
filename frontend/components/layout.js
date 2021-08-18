@@ -11,12 +11,7 @@ const Layout = ({ children, global, pageContext }) => {
     <div className="flex flex-col justify-between min-h-screen">
       {/* Aligned to the top */}
       <div className="flex-1">
-        {notificationBanner && bannerIsShown && (
-          <NotificationBanner
-            data={notificationBanner}
-            closeSelf={() => setBannerIsShown(false)}
-          />
-        )}
+        {notificationBanner && bannerIsShown && <NotificationBanner data={notificationBanner} closeSelf={() => setBannerIsShown(false)} />}
         <Navbar navbar={navbar} pageContext={pageContext} />
         <div>{children}</div>
       </div>

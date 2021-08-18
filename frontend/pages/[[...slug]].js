@@ -61,11 +61,7 @@ export async function getStaticProps(context) {
 
   const globalLocale = await getGlobalData(locale)
   // Fetch pages. Include drafts if preview mode is on
-  const pageData = await getPageData(
-    { slug: !params.slug ? [""] : params.slug },
-    locale,
-    preview
-  )
+  const pageData = await getPageData({ slug: !params.slug ? [""] : params.slug }, locale, preview)
 
   if (pageData == null) {
     // Giving the page no props will trigger a 404 page

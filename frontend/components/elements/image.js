@@ -12,23 +12,11 @@ const NextImage = ({ media, ...props }) => {
 
   // The image has a fixed width and height
   if (props.width && props.height) {
-    return (
-      <Image loader={loader} src={url} alt={alternativeText || ""} {...props} />
-    )
+    return <Image loader={loader} src={url} alt={alternativeText || ""} {...props} />
   }
 
   // The image is responsive
-  return (
-    <Image
-      loader={loader}
-      layout="responsive"
-      width={media.width}
-      height={media.height}
-      objectFit="contain"
-      src={url}
-      alt={alternativeText || ""}
-    />
-  )
+  return <Image loader={loader} layout="responsive" width={media.width} height={media.height} objectFit="contain" src={url} alt={alternativeText || ""} />
 }
 
 Image.propTypes = {

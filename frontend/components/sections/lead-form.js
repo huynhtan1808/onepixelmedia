@@ -41,22 +41,10 @@ const LeadForm = ({ data }) => {
           {({ errors, touched, isSubmitting }) => (
             <div>
               <Form className="flex flex-col md:flex-row gap-4">
-                <Field
-                  className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md"
-                  type="email"
-                  name="email"
-                  placeholder={data.emailPlaceholder}
-                />
-                <Button
-                  type="submit"
-                  button={data.submitButton}
-                  disabled={isSubmitting}
-                  loading={loading}
-                />
+                <Field className="text-base focus:outline-none py-4 md:py-0 px-4 border-2 rounded-md" type="email" name="email" placeholder={data.emailPlaceholder} />
+                <Button type="submit" button={data.submitButton} disabled={isSubmitting} loading={loading} />
               </Form>
-              <p className="text-red-500 h-12 text-sm mt-1 ml-2 text-left">
-                {(errors.email && touched.email && errors.email) || errors.api}
-              </p>
+              <p className="text-red-500 h-12 text-sm mt-1 ml-2 text-left">{(errors.email && touched.email && errors.email) || errors.api}</p>
             </div>
           )}
         </Formik>
