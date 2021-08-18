@@ -42,7 +42,7 @@ const LeadForm = ({ data }) => {
             <div>
               <Form className="flex flex-col md:flex-row gap-4 border rounded-2xl p-1 bg-default">
                 <Field className="text-base focus:outline-none py-4 md:py-0 px-4 bg-default rounded-full" type="email" name="email" placeholder={data.emailPlaceholder} />
-                <Button type="submit" button={data.submitButton} disabled={isSubmitting} loading={loading} appearance="dark"/>
+                <Button type="submit" button={data.submitButton} disabled={isSubmitting} loading={loading} appearance="dark" />
               </Form>
               <p className="text-red-500 h-12 text-sm mt-1 ml-2 text-left">{(errors.email && touched.email && errors.email) || errors.api}</p>
             </div>
