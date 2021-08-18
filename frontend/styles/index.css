@@ -92,7 +92,7 @@ a {
 }
 
 .title {
-  @apply text-3xl font-semibold tracking-normal text-primary;
+  @apply text-3xl font-semibold tracking-normal;
 }
 
 @media (min-width: 768px) {
