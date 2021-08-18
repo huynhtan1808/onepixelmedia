@@ -12,7 +12,7 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
   useLockBodyScroll()
 
   return (
-    <div className="w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-white z-10 pb-6">
+    <div className="w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-default z-10 pb-6">
       <div className="container h-full flex flex-col justify-between">
         {/* Top section */}
         <div className="flex flex-row justify-between py-2 items-center">

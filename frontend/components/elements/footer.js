@@ -5,7 +5,7 @@ import CustomLink from "./custom-link"
 
 const Footer = ({ footer }) => {
   return (
-    <footer className="pt-12 bg-gray-100">
+    <footer className="pt-12 bg-default">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div className="">{footer.logo && <NextImage width="120" height="55" media={footer.logo} />}</div>
         <nav className="flex flex-wrap flex-row lg:gap-20 items-start lg:justify-end mb-10">
@@ -23,7 +23,7 @@ const Footer = ({ footer }) => {
           ))}
         </nav>
       </div>
-      <div className="text-sm bg-gray-200 py-6 text-gray-700">
+      <div className="text-sm bg-default py-6 text-gray-700">
         <div className="container">{footer.smallText}</div>
       </div>
     </footer>
