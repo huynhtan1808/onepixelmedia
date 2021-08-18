@@ -7,10 +7,10 @@ const NotificationBanner = ({ data: { text, type }, closeSelf }) => {
     <div
       className={classNames(
         // Common classes
-        "text-white px-2 py-2",
+        "text-black px-2 py-2 text-center border-b border-gray-200",
         {
           // Apply theme based on notification type
-          "bg-blue-600": type === "info",
+          "bg-default": type === "info",
           "bg-orange-600": type === "warning",
           "bg-red-600": type === "alert",
         }
@@ -21,7 +21,7 @@ const NotificationBanner = ({ data: { text, type }, closeSelf }) => {
           <Markdown>{text}</Markdown>
         </div>
         <button onClick={closeSelf} className="px-1 py-1 flex-shrink-0">
-          <MdClose className="h-6 w-auto" color="#fff" />
+          <MdClose className="h-6 w-auto" color="#666" />
         </button>
       </div>
     </div>

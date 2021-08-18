@@ -19,7 +19,7 @@ const Navbar = ({ navbar, pageContext }) => {
   return (
     <>
       {/* The actual navbar */}
-      <nav className="border-gray-200 border-b-2 py-6 sm:py-2">
+      <nav className="sticky-nav top-0 z-20 bg-white py-2 sm:py-6 bg-opacity-60">
         <div className="container flex flex-row items-center justify-between">
           {/* Content aligned to the left */}
           <div className="flex flex-row items-center">
@@ -28,12 +28,14 @@ const Navbar = ({ navbar, pageContext }) => {
                 <NextImage width="120" height="33" media={navbar.logo} />
               </a>
             </Link>
+          </div>
+          <div>
             {/* List of links on desktop */}
             <ul className="hidden list-none md:flex flex-row gap-4 items-baseline ml-10">
               {navbar.links.map((navLink) => (
                 <li key={navLink.id}>
                   <CustomLink link={navLink} locale={router.locale}>
-                    <div className="hover:text-gray-900 px-2 py-1">
+                    <div className="text-grey hover:text-primary px-2 py-1">
                       {navLink.text}
                     </div>
                   </CustomLink>
@@ -67,7 +69,7 @@ const Navbar = ({ navbar, pageContext }) => {
             )}
             {/* Locale Switch Desktop */}
             {pageContext.localizedPaths && (
-              <div className="hidden md:block">
+              <div className="hidden md:block text-grey hover:text-primary">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
             )}

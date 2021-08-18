@@ -9,7 +9,7 @@ const TestimonialsGroup = ({ data }) => {
   const selectedTestimonial = data.testimonials[selectedTestimonialIndex]
 
   return (
-    <section className="text-center text-lg bg-gray-200 pt-12 pb-16">
+    <section className="text-center text-lg bg-default pt-12 pb-16">
       <h2 className="title mb-4">{data.title}</h2>
       <p className="text-gray-700 mb-4">{data.description}</p>
       <CustomLink link={data.link}>
@@ -75,7 +75,7 @@ const TestimonialsGroup = ({ data }) => {
       {/* Logos list */}
       <div className="flex flex-row flex-wrap items-center gap-6 sm:gap-20 justify-center mt-10 px-6 sm:px-0 ">
         {data.logos.map((logo) => (
-          <NextImage key={logo.id} width="120" height="33" media={logo.logo} />
+          <NextImage key={logo.id} width="120" height="33" media={logo.logo} className="logo-wrap"/>
         ))}
       </div>
     </section>
