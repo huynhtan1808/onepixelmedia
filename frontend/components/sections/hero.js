@@ -7,7 +7,7 @@ const Hero = ({ data }) => {
   return (
     <main className="container max-w-3xl text-center flex flex-col md:flex-row items-center justify-between py-12">
       {/* Left column for content */}
-      <div className="flex-1 sm:pr-8">
+      <div className="flex-1">
         {/* Hero section label */}
         <p className="uppercase tracking-wide font-semibold">{data.label}</p>
         {/* Big title */}
