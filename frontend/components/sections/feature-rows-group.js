@@ -2,6 +2,8 @@ import classNames from "classnames"
 import NextImage from "../elements/image"
 import Video from "../elements/video"
 import CustomLink from "../elements/custom-link"
+import Markdown from "react-markdown";
+
 
 const FeatureRowsGroup = ({ data }) => {
   return (
@@ -21,7 +23,7 @@ const FeatureRowsGroup = ({ data }) => {
           {/* Text section */}
           <div className="w-full lg:w-6/12 lg:pr-6 text-lg">
             <h3 className="title">{feature.title}</h3>
-            <p className="my-6">{feature.description}</p>
+            <Markdown className="my-6 leading-loose text-gray-700 text-md">{feature.description}</Markdown>
             <CustomLink link={feature.link}>
               <div className="text-blue-600 with-arrow hover:underline">{feature.link.text}</div>
             </CustomLink>
