@@ -2,8 +2,7 @@ import classNames from "classnames"
 import NextImage from "../elements/image"
 import Video from "../elements/video"
 import CustomLink from "../elements/custom-link"
-import Markdown from "react-markdown";
-
+import Markdown from "react-markdown"
 
 const FeatureRowsGroup = ({ data }) => {
   return (

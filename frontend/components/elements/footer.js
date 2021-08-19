@@ -11,7 +11,7 @@ const Footer = ({ footer }) => {
         <nav className="flex flex-wrap flex-row lg:gap-20 items-start lg:justify-end mb-10">
           {footer.columns.map((footerColumn) => (
             <div key={footerColumn.id} className="mt-10 lg:mt-0 w-6/12 lg:w-auto">
-              <p className="tracking-wide font-semibold text-dark">{footerColumn.title}</p>
+              <p className="tracking-wide text-dark">{footerColumn.title}</p>
               <ul className="mt-2">
                 {footerColumn.links.map((link) => (
                   <li key={link.id} className="text-grey py-1 px-1 -mx-1 hover:text-gray-900">

@@ -10,12 +10,13 @@ const TestimonialsGroup = ({ data }) => {
 
   return (
     <section className="text-center text-lg bg-default pt-12 pb-16">
-      <h2 className="title mb-4">{data.title}</h2>
-      <p className="text-gray-700 mb-4">{data.description}</p>
-      <CustomLink link={data.link}>
-        <span className="with-arrow text-blue-700 hover:underline">{data.link.text}</span>
-      </CustomLink>
-      {/* Current testimonial card */}
+      <div className="container">
+        <h2 className="title mb-4">{data.title}</h2>
+        <p className="text-gray-700 mb-4">{data.description}</p>
+        <CustomLink link={data.link}>
+          <span className="with-arrow text-blue-700 hover:underline">{data.link.text}</span>
+        </CustomLink>
+        {/* Current testimonial card 
       <div className="max-w-5xl w-8/12 sm:w-8/12 bg-white shadow-md sm:shadow-xl mx-auto flex flex-col sm:flex-row mt-10 text-left">
         <div className="w-full md:w-4/12 flex-shrink-0">
           <NextImage media={selectedTestimonial.picture} />
@@ -39,7 +40,8 @@ const TestimonialsGroup = ({ data }) => {
           </CustomLink>
         </div>
       </div>
-      {/* Change selected testimonial (only if there is more than one) */}
+      */}
+        {/* Change selected testimonial (only if there is more than one) 
       {data.testimonials.length > 1 && (
         <div className="flex flex-row gap-4 mt-10 justify-center">
           {data.testimonials.map((testimonial, index) => (
@@ -58,11 +60,13 @@ const TestimonialsGroup = ({ data }) => {
           ))}
         </div>
       )}
-      {/* Logos list */}
-      <div className="flex flex-row flex-wrap items-center gap-6 sm:gap-20 justify-center mt-10 px-6 sm:px-0">
-        {data.logos.map((logo) => (
-          <NextImage key={logo.id} width="120" height="33" media={logo.logo} className="logo-wrap opacity-60 hover:opacity-100" />
-        ))}
+      */}
+        {/* Logos list */}
+        <div className="flex flex-row flex-wrap container max-w-4xl items-center gap-6 sm:gap-16 justify-center mt-10 px-6 sm:px-0">
+          {data.logos.map((logo) => (
+            <NextImage key={logo.id} width="120" height="33" media={logo.logo} className="logo-wrap opacity-100 hover:opacity-100" />
+          ))}
+        </div>
       </div>
     </section>
   )
