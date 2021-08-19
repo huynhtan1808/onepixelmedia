@@ -19,7 +19,8 @@ const ContactForm = ({ data }) => {
       <div className="w-full md:w-1/2">
         <div className="p-2">
           <p className="text-4xl font-semibold">Contact Our Team of Digital Experts today</p>
-          <p className="py-4">If you need advices One Pixel Media is happy to help!</p>
+          <p className="py-4">Email: info@onepixelmedia.com</p>
+          <p className="py-4">Base in Ho Chi Minh, Vietnam</p>
         </div>
       </div>
       <div className="w-full md:w-1/2 rounded flex">
