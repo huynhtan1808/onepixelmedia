@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_contact_forms",
+  "info": {
+    "name": "Contact Form",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "namePlaceholder": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "email"
+    },
+    "phonePlaceholder": {
+      "type": "biginteger"
+    },
+    "message": {
+      "type": "text"
+    },
+    "submitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button"
+    }
+  }
+}
