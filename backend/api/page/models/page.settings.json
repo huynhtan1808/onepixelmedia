@@ -47,7 +47,8 @@
         "sections.rich-text",
         "sections.pricing",
         "sections.lead-form",
-        "sections.contact-form"
+        "sections.contact-form",
+        "sections.head-banner"
       ],
       "pluginOptions": {
         "i18n": {

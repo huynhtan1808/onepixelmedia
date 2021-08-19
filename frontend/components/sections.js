@@ -9,6 +9,7 @@ import RichText from "./sections/rich-text"
 import Pricing from "./sections/pricing"
 import LeadForm from "./sections/lead-form"
 import ContactForm from "./sections/contact-form"
+import HeadBanner from "./sections/head-banner"
 
 // Map Strapi sections to section components
 const sectionComponents = {
@@ -22,6 +23,7 @@ const sectionComponents = {
   "sections.pricing": Pricing,
   "sections.lead-form": LeadForm,
   "sections.contact-form": ContactForm,
+  "sections.head-banner": HeadBanner,
 }
 
 // Display a section individually
