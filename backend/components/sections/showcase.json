@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_showcases",
+  "info": {
+    "name": "showcase",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature-column"
+    }
+  }
+}

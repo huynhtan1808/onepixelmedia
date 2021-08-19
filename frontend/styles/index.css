@@ -178,3 +178,15 @@ img[alt=check] {
     background-position: 100% 50%; 
   }
 }
+
+.hover12  {
+	background: #000;
+}
+.hover12 img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12:hover img {
+	opacity: .5;
+}

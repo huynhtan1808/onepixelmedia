@@ -48,7 +48,8 @@
         "sections.pricing",
         "sections.lead-form",
         "sections.contact-form",
-        "sections.head-banner"
+        "sections.head-banner",
+        "sections.showcase"
       ],
       "pluginOptions": {
         "i18n": {

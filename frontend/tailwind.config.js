@@ -52,8 +52,13 @@ module.exports = {
       xl: "1020px",
     },
     variants: {
+      extend: {
       fill: ['hover', 'focus'],
+      gridColumn: ['first'],
+      filter: ['hover'],
+      backdropBrightness: ['hover'],
     },
+  },
   },
   plugins: [require("@tailwindcss/typography")],
 };
