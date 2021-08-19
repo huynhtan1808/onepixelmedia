@@ -14,7 +14,7 @@ const TestimonialsGroup = ({ data }) => {
         <h2 className="title mb-4">{data.title}</h2>
         <p className="text-gray-700 mb-4">{data.description}</p>
         <CustomLink link={data.link}>
-          <span className="with-arrow text-blue-700 hover:underline">{data.link.text}</span>
+          <span className="with-arrow text-blue-500 hover:underline">{data.link.text}</span>
         </CustomLink>
         {/* Current testimonial card 
       <div className="max-w-5xl w-8/12 sm:w-8/12 bg-white shadow-md sm:shadow-xl mx-auto flex flex-col sm:flex-row mt-10 text-left">
@@ -64,7 +64,7 @@ const TestimonialsGroup = ({ data }) => {
         {/* Logos list */}
         <div className="flex flex-row flex-wrap container max-w-4xl items-center gap-6 sm:gap-16 justify-center mt-10 px-6 sm:px-0">
           {data.logos.map((logo) => (
-            <NextImage key={logo.id} width="120" height="33" media={logo.logo} className="logo-wrap opacity-100 hover:opacity-100" />
+            <NextImage key={logo.id} width="120" height="80" media={logo.logo} className="logo-wrap opacity-80 hover:opacity-100" />
           ))}
         </div>
       </div>

@@ -7,7 +7,7 @@ const NotificationBanner = ({ data: { text, type }, closeSelf }) => {
     <div
       className={classNames(
         // Common classes
-        "text-black px-2 py-2 text-center border-b border-gray-200",
+        "text-xs md:text-sm text-black px-2 py-2 text-center border-b border-gray-200",
         {
           // Apply theme based on notification type
           "bg-default": type === "info",

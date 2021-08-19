@@ -97,7 +97,7 @@ a {
 
 @media (min-width: 768px) {
   .title {
-    @apply text-5xl;    
+    @apply text-4xl;    
   }
 }
 .back-arrow:before {

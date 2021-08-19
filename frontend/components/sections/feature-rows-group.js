@@ -6,12 +6,12 @@ import Markdown from "react-markdown"
 
 const FeatureRowsGroup = ({ data }) => {
   return (
-    <div className="container flex flex-col gap-12 py-12">
+    <div className="container flex flex-col gap-12 py-16">
       {data.features.map((feature, index) => (
         <div
           className={classNames(
             // Common classes
-            "flex flex-col justify-start md:justify-between md:items-center gap-10",
+            "flex flex-col justify-center md:justify-between md:items-center gap-12 py-16",
             {
               "lg:flex-row": index % 2 === 0,
               "lg:flex-row-reverse": index % 2 === 1,
@@ -20,7 +20,7 @@ const FeatureRowsGroup = ({ data }) => {
           key={feature.id}
         >
           {/* Text section */}
-          <div className="w-full lg:w-6/12 lg:pr-6 text-lg">
+          <div className="w-full lg:w-6/12 lg:pr-6 text-lg text-center">
             <h3 className="title">{feature.title}</h3>
             <Markdown className="my-6 leading-loose text-gray-700 text-md">{feature.description}</Markdown>
             <CustomLink link={feature.link}>
@@ -28,7 +28,7 @@ const FeatureRowsGroup = ({ data }) => {
             </CustomLink>
           </div>
           {/* Media section */}
-          <div className="w-full sm:9/12 lg:w-5/12 max-h-full">
+          <div className="w-full sm:9/12 lg:w-6/12 max-h-full">
             {/* Images */}
             {feature.media.mime.startsWith("image") && (
               <div className="w-full h-auto shadow-xl">
@@ -36,7 +36,7 @@ const FeatureRowsGroup = ({ data }) => {
               </div>
             )}
             {/* Videos */}
-            {feature.media.mime.startsWith("video") && <Video media={feature.media} className="w-full h-auto" autoPlay controls={false} />}
+            {feature.media.mime.startsWith("video") && <Video media={feature.media} className="w-full h-auto mx-auto" autoPlay controls={false} />}
           </div>
         </div>
       ))}
