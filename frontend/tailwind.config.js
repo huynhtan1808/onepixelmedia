@@ -35,7 +35,7 @@ module.exports = {
         secondary: '#fff',
         default: '#FAFAFA',
         grey: '#666666',
-        dark: '1D1D1F'
+        dark: '#1D1D1F'
       },
       container: {
         center: true,
