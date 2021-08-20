@@ -31,7 +31,7 @@ const FeatureRowsGroup = ({ data }) => {
           <div className="w-full sm:9/12 lg:w-6/12 max-h-full">
             {/* Images */}
             {feature.media.mime.startsWith("image") && (
-              <div className="w-full h-auto shadow-xl">
+              <div className="w-full h-auto filter drop-shadow-xl">
                 <NextImage media={feature.media} />
               </div>
             )}
