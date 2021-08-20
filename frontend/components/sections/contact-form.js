@@ -18,7 +18,7 @@ const ContactForm = ({ data }) => {
     <div className="container justify-between flex flex-col lg:flex-row lg:flex-wrap my-20">
       <div className="w-full md:w-1/2">
         <div className="p-2">
-          <p className="text-3xl md:text-4xl font-semibold">Contact Our Team of Digital Experts today</p>
+          <p className="text-2xl md:text-4xl font-semibold">Contact Our Team of Digital Experts today</p>
           <p className="py-4">Email: info@onepixelmedia.com</p>
           <p className="py-4">Base in Ho Chi Minh, Vietnam</p>
         </div>

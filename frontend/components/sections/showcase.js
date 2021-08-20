@@ -11,8 +11,8 @@ const Showcase = ({ data }) => {
             </figure>
           </div>
           <div className="opacity-50 group-hover:opacity-100 z-20 duration-300 text-black flex justify-center items-center">
-            <h3 className="text-xl font-semibold absolute -mt-40">{project.title}</h3>
-            <a rel="nofollow noreferrer" href={project.description} target="_blank" className="absolute -mt-28 md:-mt-20 hover:underline">
+            <h3 className="text-xl font-semibold absolute -mt-28 md:-mt-40">{project.title}</h3>
+            <a rel="nofollow noreferrer" href={project.description} target="_blank" className="absolute -mt-16 md:-mt-20 hover:underline">
               {project.description}
             </a>
           </div>
