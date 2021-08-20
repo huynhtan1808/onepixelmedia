@@ -2,10 +2,10 @@ import NextImage from "../elements/image"
 
 const Showcase = ({ data }) => {
   return (
-    <div className="container grid md:grid-cols-2 gap-10 py-12">
+    <div className="container grid md:grid-cols-2 gap-12 py-12">
       {data.projects.map((project) => (
         <div className="group hover12 text-center" key={project.id}>
-          <div className="">
+          <div className="shadow-xl">
             <figure>
               <NextImage media={project.icon} />
             </figure>
