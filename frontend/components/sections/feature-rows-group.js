@@ -6,12 +6,12 @@ import Markdown from "react-markdown"
 
 const FeatureRowsGroup = ({ data }) => {
   return (
-    <div className="container flex flex-col gap-12 py-16">
+    <div className="container flex flex-col gap-6 py-10">
       {data.features.map((feature, index) => (
         <div
           className={classNames(
             // Common classes
-            "flex flex-col justify-center md:justify-between md:items-center gap-12 py-16",
+            "flex flex-col justify-center md:justify-between md:items-center gap-6 py-10",
             {
               "lg:flex-row": index % 2 === 0,
               "lg:flex-row-reverse": index % 2 === 1,

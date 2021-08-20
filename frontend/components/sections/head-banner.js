@@ -2,7 +2,7 @@ import Image from "../elements/image"
 
 const HeadBanner = ({ data }) => {
   return (
-    <main className="bg-white pt-12 md:pt-28 text-center text-primary">
+    <main className="bg-white pt-12 text-center text-primary">
       <div className="container max-w-5xl">
         <p className="uppercase tracking-wide font-semibold">{data.label}</p>
         <h1 className="text-3xl md:text-5xl font-bold mt-2 mb-5">{data.title}</h1>
