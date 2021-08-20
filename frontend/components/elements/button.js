@@ -12,11 +12,11 @@ const Button = ({ button, appearance, compact = false, handleClick, loading = fa
           "flex w-full focus:outline-none justify-center lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border-2 rounded-2xl",
           // Full-size button
           {
-            "px-8 py-3": compact === false,
+            "px-6 py-3": compact === false,
           },
           // Compact button
           {
-            "px-6 py-2": compact === true,
+            "px-4 py-2": compact === true,
           },
           // Specific to when the button is fully dark
           {
