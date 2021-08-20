@@ -14,7 +14,7 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
 
   return (
     <div className="w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-default z-10 pb-6">
-      <div className="container h-full flex flex-col justify-between">
+      <div className="container h-full flex flex-col justify-start">
         {/* Top section */}
         <div className="flex flex-row justify-between py-2 items-center">
           {/* Company logo */}
@@ -25,8 +25,8 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
           </button>
         </div>
         {/* Bottom section */}
-        <div className="flex flex-col justify-end w-9/12 mx-auto">
-          <ul className="flex flex-col list-none gap-6 items-baseline text-xl mb-10">
+        <div className="flex flex-col justify-end w-9/12 mx-5 mt-12">
+          <ul className="flex flex-col list-none gap-5 items-baseline text-xl mb-10">
             {navbar.links.map((navLink) => (
               <li key={navLink.id} onClick={closeSelf} className="block w-full">
                 <CustomLink link={navLink}>
