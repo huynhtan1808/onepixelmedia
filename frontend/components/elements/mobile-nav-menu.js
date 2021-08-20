@@ -8,7 +8,6 @@ import NextImage from "./image"
 import CustomLink from "./custom-link"
 
 const MobileNavMenu = ({ navbar, closeSelf }) => {
-
   // Prevent window scroll while mobile nav menu is open
   useLockBodyScroll()
 
