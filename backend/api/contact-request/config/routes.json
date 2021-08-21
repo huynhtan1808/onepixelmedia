@@ -2,8 +2,8 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/contact-requests",
-      "handler": "contact-request.find",
+      "path": "/email",
+      "handler": "Email.index",
       "config": {
         "policies": []
       }

@@ -1,6 +1,6 @@
 
 module.exports = ({ env }) => ({
-    /*    upload: {
+        upload: {
           provider: 'cloudinary',
           providerOptions: {
             cloud_name: env('CLOUDINARY_NAME'),
@@ -12,19 +12,18 @@ module.exports = ({ env }) => ({
             delete: {},
           },
         },
-    /*
+
         email: {
           provider: 'sendgrid',
           providerOptions: {
-            apiKey: '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',
+            apiKey: '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',
           },
           settings: {
-            defaultFrom: 'cskh@getexpress.vn',
-            defaultReplyTo: 'cskh@getexpress.vn',
+            defaultFrom: 'info@onepixelmedia.com',
+            defaultReplyTo: 'tanhuynh1808@gmail.com',
             testAddress: 'tanhuynh1808@gmail.com',
           },
         },
         // ...
-        */
-      });
+});
     
