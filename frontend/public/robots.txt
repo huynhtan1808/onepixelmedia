@@ -3,4 +3,4 @@ Disallow: /_next/
 Disallow: /ads.txt
 
 User-agent: *
-Sitemap: https://techpcguide.com/sitemap.xml
+Sitemap: https://onepixelmedia.com/sitemap.xml
