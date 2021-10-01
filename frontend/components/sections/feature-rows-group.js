@@ -21,7 +21,7 @@ const FeatureRowsGroup = ({ data }) => {
         >
           {/* Text section */}
           <div className="w-full lg:w-6/12 lg:pr-6 text-lg text-center">
-            <h3 className="title">{feature.title}</h3>
+            <h2 className="title">{feature.title}</h2>
             <Markdown className="my-6 leading-loose text-md">{feature.description}</Markdown>
             <CustomLink link={feature.link}>
               <div className="text-blue-600 with-arrow hover:underline">{feature.link.text}</div>
