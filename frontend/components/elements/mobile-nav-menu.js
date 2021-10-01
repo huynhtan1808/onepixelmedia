@@ -31,14 +31,13 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
                 <CustomLink link={navLink}>
                   <div className="hover:text-gray-900 py-6 flex flex-row justify-between items-center">
                     <span>{navLink.text}</span>
-                    
                   </div>
                 </CustomLink>
               </li>
             ))}
           </ul>
           <div className="hidden md:block">
-          <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} />
+            <ButtonLink button={navbar.button} appearance={getButtonAppearance(navbar.button.type, "light")} />
           </div>
         </div>
       </div>
