@@ -9,11 +9,11 @@ const Hero = ({ data }) => {
       {/* Left column for content */}
       <div className="flex-1">
         {/* Hero section label */}
-        <p className="uppercase tracking-wide font-semibold">{data.label}</p>
+        <h1 className="uppercase tracking-wide font-semibold">{data.label}</h1>
         {/* Big title */}
-        <h1 className="text-gradient hero text-6xl md:text-9xl mt-2 sm:mt-0 mb-4 sm:mb-2">{data.title}</h1>
+        <h2 className="text-gradient hero text-6xl md:text-9xl mt-2 sm:mt-0 mb-4 sm:mb-2">{data.title}</h2>
         {/* Description paragraph */}
-        <p className="text-xl mb-6">{data.description}</p>
+        <h2 className="text-xl mb-6">{data.description}</h2>
         {/* Buttons row */}
         <div className="flex flex-row flex-wrap gap-4 justify-center">
           {data.buttons.map((button) => (

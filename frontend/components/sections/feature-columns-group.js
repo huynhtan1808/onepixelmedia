@@ -8,7 +8,7 @@ const FeatureColumnsGroup = ({ data }) => {
           <div className="w-12 h-12 mx-auto">
             <NextImage media={project.icon} />
           </div>
-          <h2 className="font-bold mt-4 mb-4">{project.title}</h2>
+          <h1 className="font-bold mt-4 mb-4">{project.title}</h1>
           <p>{project.description}</p>
         </div>
       ))}
