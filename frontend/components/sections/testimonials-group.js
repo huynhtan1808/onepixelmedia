@@ -64,7 +64,7 @@ const TestimonialsGroup = ({ data }) => {
         {/* Logos list */}
         <div className="flex flex-row flex-wrap container max-w-4xl items-center gap-6 sm:gap-16 justify-center mt-10 px-6 sm:px-0">
           {data.logos.map((logo) => (
-            <NextImage key={logo.id} width="120" height="80" media={logo.logo} className="logo-wrap opacity-80 hover:opacity-100" />
+            <NextImage key={logo.id} width="120" height="60" media={logo.logo} className="logo-wrap opacity-80 hover:opacity-100" />
           ))}
         </div>
       </div>
