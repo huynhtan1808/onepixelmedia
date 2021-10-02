@@ -5,13 +5,13 @@ import NextImage from "../elements/image"
 
 const Hero = ({ data }) => {
   return (
-    <main className="container max-w-3xl text-center flex flex-col md:flex-row items-center justify-between py-12">
+    <main className="container max-w-3xl text-center flex flex-col md:flex-row items-center justify-between py-24">
       {/* Left column for content */}
       <div className="flex-1">
         {/* Hero section label */}
         <h1 className="uppercase tracking-wide font-semibold">{data.label}</h1>
         {/* Big title */}
-        <h2 className="text-gradient hero text-6xl md:text-9xl mt-2 sm:mt-0 mb-4 sm:mb-2">{data.title}</h2>
+        <h2 className="text-gradient hero text-7xl md:text-9xl mt-2 sm:mt-0 mb-4 sm:mb-2">{data.title}</h2>
         {/* Description paragraph */}
         <h2 className="text-xl mb-6">{data.description}</h2>
         {/* Buttons row */}
