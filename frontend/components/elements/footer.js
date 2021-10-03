@@ -2,12 +2,17 @@ import PropTypes from "prop-types"
 import { linkPropTypes, mediaPropTypes } from "utils/types"
 import NextImage from "./image"
 import CustomLink from "./custom-link"
+import Schema from "./schema"
 
 const Footer = ({ footer }) => {
   return (
     <footer className="pt-12 bg-default border-t border-gray-200">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
-        <div className="opacity-60">{footer.logo && <NextImage width="120" height="55" media={footer.logo} />}</div>
+        <div className="">
+          {footer.logo && <NextImage width="120" height="55" media={footer.logo} />}
+          <Schema />
+        </div>
+        
         <nav className="flex flex-wrap flex-row lg:gap-20 items-start lg:justify-end mb-10">
           {footer.columns.map((footerColumn) => (
             <div key={footerColumn.id} className="mt-10 lg:mt-0 w-6/12 lg:w-auto">
@@ -23,8 +28,8 @@ const Footer = ({ footer }) => {
           ))}
         </nav>
       </div>
-      <div className="text-sm bg-default py-6 text-gray-700">
-        <div className="container">{footer.smallText}</div>
+      <div className="text-sm bg-default py-6">
+        <div className="container text-grey">{footer.smallText}</div>
       </div>
     </footer>
   )
