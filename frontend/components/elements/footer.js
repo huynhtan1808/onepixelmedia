@@ -12,7 +12,7 @@ const Footer = ({ footer }) => {
           {footer.logo && <NextImage width="120" height="55" media={footer.logo} />}
           <Schema />
         </div>
-        
+
         <nav className="flex flex-wrap flex-row lg:gap-20 items-start lg:justify-end mb-10">
           {footer.columns.map((footerColumn) => (
             <div key={footerColumn.id} className="mt-10 lg:mt-0 w-6/12 lg:w-auto">
