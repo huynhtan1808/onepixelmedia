@@ -16,12 +16,12 @@ module.exports = ({ env }) => ({
         email: {
           provider: 'sendgrid',
           providerOptions: {
-            apiKey: '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',
+            apiKey: 'SENDGRID_API',
           },
           settings: {
             defaultFrom: 'info@onepixelmedia.com',
-            defaultReplyTo: 'tanhuynh1808@gmail.com',
-            testAddress: 'tanhuynh1808@gmail.com',
+            defaultReplyTo: 'info@onepixelmedia.com',
+            testAddress: 'info@onepixelmedia.com',
           },
         },
         // ...
