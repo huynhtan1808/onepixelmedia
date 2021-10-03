@@ -16,7 +16,7 @@ const Schema = () => {
         <meta itemProp="postalCode" content="70000" />
         <meta itemProp="addressCountry" content="Viet Nam"></meta>
       </div>
-      <div itemProp="founder" itemScope="" itemType="https://schema.org/Person">
+      <div itemProp="founder" itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content="Huynh Cong Tan" />
         <link itemProp="sameAs" href="https://www.tanhuynh.io/" aria-label="Personal Blog"></link>
         <link itemProp="sameAs" href="https://www.facebook.com/huynhtan1808/" aria-label="Facebook"></link>
