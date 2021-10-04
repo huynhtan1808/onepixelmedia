@@ -17,7 +17,7 @@ const ContactForm = ({ data }) => {
   return (
     <div className="container justify-between flex flex-col lg:flex-row lg:flex-wrap my-20">
       <div className="w-full md:w-1/2">
-        <div className="p-2">
+        <div>
           <p className="text-2xl md:text-4xl font-semibold">Contact Our Team of Digital Experts today</p>
           <p className="py-4 text-xl font-bold">Email</p>
           <p className="">info@onepixelmedia.com</p>
@@ -65,7 +65,7 @@ const ContactForm = ({ data }) => {
             <div>
               <Form className="w-full max-w-lg">
                 <div className="flex flex-wrap">
-                  <div className="w-full md:w-1/2 px-3">
+                  <div className="w-full md:w-1/2 md:px-3">
                     <label className="block tracking-wide text-dark text-sm text-left font-bold mt-3 mb-2">{data.namePlaceholder}</label>
                     <Field
                       className="appearance-none block w-full text-dark border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -74,7 +74,7 @@ const ContactForm = ({ data }) => {
                     />
                     <ErrorMessage name="name" component="div" className="text-red-500 h-12 text-sm mt-1" />
                   </div>
-                  <div className="w-full md:w-1/2 px-3">
+                  <div className="w-full md:w-1/2 md:px-3">
                     <label className="block tracking-wide text-dark text-sm text-left font-bold mt-3 mb-2">{data.phonePlaceholder}</label>
                     <Field
                       className="appearance-none block w-full text-dark border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -83,7 +83,7 @@ const ContactForm = ({ data }) => {
                     />
                     <ErrorMessage name="phone" component="div" className="text-red-500 h-12 text-sm mt-1" />
                   </div>
-                  <div className="w-full px-3">
+                  <div className="w-full md:px-3">
                     <label className="block tracking-wide text-dark text-sm text-left font-bold mt-3 mb-2">{data.emailPlaceholder}</label>
                     <Field
                       className="appearance-none block w-full text-dark border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -92,7 +92,7 @@ const ContactForm = ({ data }) => {
                     />
                     <ErrorMessage name="email" component="div" className="text-red-500 h-12 text-sm mt-1" />
                   </div>
-                  <div className="w-full px-3">
+                  <div className="w-full md:px-3">
                     <label className="block tracking-wide text-dark text-sm text-left font-bold mt-3 mb-2">{data.message}</label>
                     <Field
                       className="appearance-none block w-full text-dark border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -100,10 +100,10 @@ const ContactForm = ({ data }) => {
                       as="textarea"
                     />
                   </div>
-                  <div className="w-full md:w-1/3 mt-5 ml-3 md:mb-0">
+                  <div className="w-full md:w-1/3 mt-5 md:ml-3">
                     <Button type="submit" appearance="dark" button={data.submitButton} disabled={isSubmitting} loading={loading} />
                   </div>
-                  <div className="w-full px-3">{status && status.msg && <p className="bg-green-100 text-green-500 border-l-3 border-green-500 p-3 rounded-r-md mt-5">{status.msg}</p>}</div>
+                  <div className="w-full md:px-3">{status && status.msg && <p className="bg-green-100 text-green-500 border-l-3 border-green-500 p-3 rounded-r-md mt-5">{status.msg}</p>}</div>
                 </div>
               </Form>
             </div>
