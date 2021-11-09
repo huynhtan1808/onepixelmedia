@@ -33,9 +33,10 @@ module.exports = {
       colors: {
         primary: '#000',
         secondary: '#fff',
-        default: '#FAFAFA',
+        default: '#f7f7f8',
         grey: '#666666',
-        dark: '#1D1D1F'
+        dark: '#1D1D1F',
+
       },
       container: {
         center: true,

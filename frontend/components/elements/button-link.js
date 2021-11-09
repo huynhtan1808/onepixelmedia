@@ -9,10 +9,10 @@ const ButtonContent = ({ button, appearance, compact }) => {
     <div
       className={classNames(
         // Common classes
-        "block w-full lg:w-auto text-center tracking-wide font-medium text-base md:text-sm border-2 rounded-full",
+        "block w-full lg:w-auto text-center tracking-wide font-medium text-base md:text-sm border rounded-lg",
         // Full-size button
         {
-          "px-8 py-2.5": compact === false,
+          "px-8 py-3": compact === false,
         },
         // Compact button
         {

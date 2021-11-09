@@ -6,7 +6,7 @@ import Schema from "./schema"
 
 const Footer = ({ footer }) => {
   return (
-    <footer className="pt-12 bg-default border-t border-gray-200">
+    <footer className="pt-12 bg-default">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div className="">
           {footer.logo && <NextImage width="120" height="55" media={footer.logo} />}

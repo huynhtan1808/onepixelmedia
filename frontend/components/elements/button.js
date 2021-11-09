@@ -9,10 +9,10 @@ const Button = ({ button, appearance, compact = false, handleClick, loading = fa
       <div
         className={classNames(
           // Common classes
-          "flex w-full focus:outline-none justify-center lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border-2 rounded-full",
+          "flex w-full focus:outline-none justify-center lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border rounded-lg",
           // Full-size button
           {
-            "px-6 py-3": compact === false,
+            "px-8 py-3": compact === false,
           },
           // Compact button
           {
