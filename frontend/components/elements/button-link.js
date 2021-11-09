@@ -28,11 +28,11 @@ const ButtonContent = ({ button, appearance, compact }) => {
         },
         // Specific to when the button is fully white
         {
-          "bg-primary text-white border-primary transition-all transform hover:-translate-y-0.5": appearance === "white",
+          "bg-secondary bg-gradient-to-r from-1 via-2 via-3 to-white text-black transition-all transform hover:-translate-y-0.5": appearance === "white",
         },
         // Specific to when the button is white outlines
         {
-          "text-primary bg-secondary border-secondary hover:transition duration-150 ease-in-out transform hover:-translate-y-0.5": appearance === "white-outline",
+          "text-secondary bg-4 border-secondary hover:transition duration-150 ease-in-out transform hover:-translate-y-0.5": appearance === "white-outline",
         }
       )}
     >
