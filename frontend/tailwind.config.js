@@ -36,7 +36,9 @@ module.exports = {
         default: '#f7f7f8',
         grey: '#666666',
         dark: '#1D1D1F',
-
+        1:'rgba(126,219,220,.3)',
+        2:'rgba(228,175,203,.3) 11.65%',
+        3:'rgba(226,194,139,.3) 20.18%',
       },
       container: {
         center: true,

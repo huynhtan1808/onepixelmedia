@@ -12,15 +12,15 @@ const ButtonContent = ({ button, appearance, compact }) => {
         "block w-full lg:w-auto text-center tracking-wide font-medium text-base md:text-sm border rounded-lg",
         // Full-size button
         {
-          "px-8 py-3": compact === false,
+          "px-10 py-4": compact === false,
         },
         // Compact button
         {
-          "px-6 py-2": compact === true,
+          "px-5 py-2.5": compact === true,
         },
         // Specific to when the button is fully dark
         {
-          "bg-primary text-white border-primary hover:bg-secondary hover:text-primary": appearance === "dark",
+          "bg-primary bg-gradient-to-r from-1 via-2 via-3 to-black text-white": appearance === "dark",
         },
         // Specific to when the button is dark outlines
         {
