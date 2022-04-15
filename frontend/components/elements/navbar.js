@@ -25,7 +25,7 @@ const Navbar = ({ navbar, pageContext }) => {
           <div className="flex flex-row items-center">
             <Link href="/">
               <a className="h-12 w-56">
-                <NextImage width="95" height="45" media={navbar.logo} />
+                <NextImage width="200" height="45" media={navbar.logo} />
               </a>
             </Link>
           </div>
