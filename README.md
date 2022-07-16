@@ -1,5 +1,4 @@
-# onepixelmedia
-One Pixel Media - WEB DEVELOPMENT and SEARCH ENGINE MARKETING SERVICES
+# One Pixel Media - WEB DEVELOPMENT and SEARCH ENGINE MARKETING SERVICES
 
 Grow Your Business with Custom Web Design, Web Development & SEO
 We can help you with our Web Design, Custom Web Development, Logo Design, Branding and SEO, and Internet Marketing Services. Boost your business with One Pixel Media
